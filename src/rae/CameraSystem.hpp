@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+#include <functional>
+
 #include "Entity.hpp"
 
 #include "Camera.hpp"
@@ -24,9 +26,8 @@ public:
 	void setNeedsUpdate() { m_camera.setNeedsUpdate(); }
 	void setAspectRatio(float aspect) { m_camera.setAspectRatio(aspect); }
 
-	const Camera& getCurrentCamera() const { return m_camera; }
-	//JONDE TODO use only const version 
-	Camera& getCurrentCamera() { return m_camera; }
+	const Camera&    getCurrentCamera() const { return m_camera; }
+	Camera&          getCurrentCamera()       { return m_camera; }
 
 	void connectCameraChangedEventHandler(std::function<void(const Camera&)> handler);
 

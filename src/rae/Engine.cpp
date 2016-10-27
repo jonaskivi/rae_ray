@@ -309,7 +309,6 @@ void Engine::onKeyEvent(const Input& input)
 	{
 		switch (input.key.value)
 		{
-			case KeySym::P: m_objectFactory.measure(); break; // JONDE TEMP measure
 			case KeySym::R: m_renderSystem.clearImageRenderer(); break;
 			case KeySym::G:
 				m_renderSystem.toggleGlRenderer(); // more like debug view currently

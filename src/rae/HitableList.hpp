@@ -24,7 +24,7 @@ public:
 
 	void clear()
 	{
-		for(size_t i = 0; i < m_list.size(); ++i)
+		for(int i = 0; i < (int)m_list.size(); ++i)
 		{
 			delete m_list[i];
 		}

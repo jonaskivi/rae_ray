@@ -81,8 +81,8 @@ void CameraSystem::emitCameraChangedEvent()
 
 void CameraSystem::update(double time, double delta_time, std::vector<Entity>&)
 {
-	//JONDE TODO: m_screenInfo??? from ScreenSystem???
-	//JONDE m_camera.setAspectRatio( float(m_windowPixelWidth) / float(m_windowPixelHeight) );
+	// TODO: m_screenInfo??? from ScreenSystem???
+	// m_camera.setAspectRatio( float(m_windowPixelWidth) / float(m_windowPixelHeight) );
 
 	if (m_input.getKeyState(KeySym::Control_L))
 		m_camera.setCameraSpeedDown(true);

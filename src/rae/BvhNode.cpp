@@ -2,6 +2,7 @@
 #include "HitRecord.hpp"
 
 #include <iostream>
+#include <algorithm>
 
 using namespace Rae;
 
