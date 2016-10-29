@@ -48,7 +48,7 @@ public:
 
 	void createVBOs();
 	void render(unsigned set_shader_program_id);
-	int triangleCount() const { return indices.size() / 3; }
+	int triangleCount() const { return int(indices.size()) / 3; }
 	void computeAabb();
 
 protected:

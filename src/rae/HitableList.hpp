@@ -7,7 +7,7 @@ namespace Rae
 {
 
 class Ray;
-class HitRecord;
+struct HitRecord;
 
 class HitableList : public Hitable
 {

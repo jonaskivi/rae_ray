@@ -2,6 +2,7 @@
 #include "Ray.hpp"
 #include "HitRecord.hpp"
 #include "Aabb.hpp"
+#include "Material.hpp"
 
 using namespace Rae;
 

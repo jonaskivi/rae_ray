@@ -4,7 +4,7 @@ namespace Rae
 {
 
 class Ray;
-class HitRecord;
+struct HitRecord;
 class Aabb;
 
 class Hitable

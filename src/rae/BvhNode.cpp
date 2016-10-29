@@ -1,6 +1,8 @@
 #include "BvhNode.hpp"
 #include "HitRecord.hpp"
 
+#include "Random.hpp"
+
 #include <iostream>
 #include <algorithm>
 

@@ -28,10 +28,10 @@ public:
 	{
 	}
 
+	~Material(){}
+
 	virtual bool scatter(const Ray& r_in, const HitRecord& record, vec3& attenuation, Ray& scattered) const;
 	virtual vec3 emitted(const vec3& p) const { return vec3(0.0f, 0.0f, 0.0f); }
-	
-	bool metal(const Ray& r_in, const HitRecord& record, vec3& attenuation, Ray& scattered) const;
 
 	vec3 albedo;
 
